@@ -1,14 +1,15 @@
-// Writes the poem "Calendar" byte-for-byte to <outputDir>/entry.txt (no trailing newline).
+// Writes the poem "Thermos" byte-for-byte to <outputDir>/entry.txt (no trailing newline).
 import { mkdirSync, writeFileSync } from 'node:fs';
 
-const POEM = `Calendar
-"Clear Friday," I tell my agent. "I can't face him."
-It opens my brother's invite, then waits.
-"Decline?" it asks.
-I watch the hour I had kept for anger.
-"Move it to the station cafe."
-The pin moves. His name stays.
-I still have to meet him.`;
+const POEM = `Thermos
+At the night bus stop, a woman asks,
+"Keep this warm till he comes?"
+I cradle her thermos in both hands.
+The bus sighs past.
+Her son arrives; she gives him the cup,
+then puts her cold hands in mine.
+I thought I was keeping the tea.
+She was keeping me there.`;
 
 const outputDir = process.env.OUTPUT_DIR || '/output';
 mkdirSync(outputDir, { recursive: true });

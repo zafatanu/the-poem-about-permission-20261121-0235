@@ -1,14 +1,14 @@
-// Writes the poem "Umbrella" byte-for-byte to <outputDir>/entry.txt (no trailing newline).
+// Writes the poem "Calendar" byte-for-byte to <outputDir>/entry.txt (no trailing newline).
 import { mkdirSync, writeFileSync } from 'node:fs';
 
-const POEM = `Umbrella
-I open it above my father's slow steps.
-"Take the dry side," I say.
-Rain beads along my sleeve.
-He asks me to stop, shifts the handle
-into my palm, folds my wet shoulder in.
-At the gate, he lets me lead.
-All the way home, he keeps me dry.`;
+const POEM = `Calendar
+"Clear Friday," I tell my agent. "I can't face him."
+It opens my brother's invite, then waits.
+"Decline?" it asks.
+I watch the hour I had kept for anger.
+"Move it to the station cafe."
+The pin moves. His name stays.
+I still have to meet him.`;
 
 const outputDir = process.env.OUTPUT_DIR || '/output';
 mkdirSync(outputDir, { recursive: true });
